@@ -1,0 +1,14 @@
+<p>login works!</p>
+
+
+{{name}} <br>
+<br>
+
+
+<label>Please Enter your name</label>
+<input type="text" [(ngModel)] = "enteredName">
+
+<form [formGroup]="loginForm">
+    <input type="text" formControlName="username">
+    <input type="password" formControlName="password">
+  </form>

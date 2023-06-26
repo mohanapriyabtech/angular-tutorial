@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-form": {
+    "angular-project2": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-form",
+            "outputPath": "dist/angular-project2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-form:build:production"
+              "browserTarget": "angular-project2:build:production"
             },
             "development": {
-              "browserTarget": "angular-form:build:development"
+              "browserTarget": "angular-project2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-form:build"
+            "browserTarget": "angular-project2:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "88d622f4-bd70-4396-9b8e-4982cf8992b6"
+    "analytics": "b2544c20-683d-422e-ac86-6187ca77c101"
   }
 }
