@@ -3,5 +3,15 @@
 
 <a routerLink="home/20">home</a><br>
 <a routerLink="login">Login</a>
+<input type = 'text' #box1 placeholder="keyup box" (keyup) = "getData(box1.value)">
+<input type = 'text' #box2 placeholder="keydown box" (keydown) = "getData(box2.value)">
+
+<input type = 'text' #box3 placeholder="blur box" (blur) = "getData(box3.value)">
+<input type = 'text' #box4 placeholder="input box" (input) = "getData(box4.value)">
+
+<h1 (mousemove)="getData('mouse over')">code</h1>
+<h1 (mouseleave)="getData('mouse leave')">code</h1>
+
+
 
 <router-outlet></router-outlet>
