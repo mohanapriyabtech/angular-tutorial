@@ -196,12 +196,13 @@ class Point3 {
     h: number 
     i: number 
     j: number 
-    constructor(h:number, i:number, j?:number){
+    constructor(h:number, i:number, j:number){
         this.h = h ;
         this.i = i ;
+        this.j = j ;
     }
     draw2=():any =>{
-        console.log(this.j)
+        // console.log(this.j)
     }
 }
 
@@ -211,3 +212,66 @@ let shape2  = new Point3(5,4,6) // object
 shape2.draw2()
 
 //==============================================
+
+
+
+interface Loggable {
+    log(): void;
+  }
+
+  interface Printable {
+    print(): void;
+  }
+  
+  class Document1 implements Printable, Loggable {
+    print(): void {
+    //   console.log("Printing document...");
+    }
+  
+    log(): void {
+      console.log("Logging document...");
+    }
+  }
+
+
+const document1 = new Document1();
+document1.print();
+//=======================================================
+
+function getArrayLength<T>(arr: T[]): number {
+    return arr.length;
+  }
+  
+  // Usage examples
+  const numbers = [1, 2, 3, 4, 5];
+  const names = ["Alice", "Bob", "Charlie"];
+  
+  console.log(getArrayLength(numbers)); // Output: 5
+  console.log(getArrayLength(names));   // Output: 3
+
+  //=========================================================
+
+  // A generic class representing a Box that can hold a value of any type
+class Box<T> {
+    private value: T;
+  
+    constructor(value: T) {
+      this.value = value;
+    }
+  
+    getValue(): T {
+      return this.value;
+    }
+  }
+  
+  // Usage examples
+  const numberBox = new Box<number>(10);
+  const stringBox = new Box<string>("Hello");
+  
+  console.log(numberBox.getValue()); // Output: 10
+  console.log(stringBox.getValue()); // Output: Hello
+
+  //=============================================================
+
+
+  

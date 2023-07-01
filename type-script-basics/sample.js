@@ -94,37 +94,16 @@ shape1.draw2();
 //=========================================
 var Point3 = /** @class */ (function () {
     function Point3(h, i, j) {
+        var _this = this;
         this.draw2 = function () {
-            // console.log(this.j)
+            console.log(_this.j);
         };
         this.h = h;
         this.i = i;
-        this.j = j;
     }
     return Point3;
 }());
 //let shape1 :Point2 = new Point2() // object
 var shape2 = new Point3(5, 4, 6); // object
 shape2.draw2();
-var Document1 = /** @class */ (function () {
-    function Document1() {
-    }
-    Document1.prototype.print = function () {
-        //   console.log("Printing document...");
-    };
-    Document1.prototype.log = function () {
-        console.log("Logging document...");
-    };
-    return Document1;
-}());
-var document1 = new Document1();
-document1.print();
-//=======================================================
-function getArrayLength(arr) {
-    return arr.length;
-}
-// Usage examples
-var numbers = [1, 2, 3, 4, 5];
-var names = ["Alice", "Bob", "Charlie"];
-console.log(getArrayLength(numbers)); // Output: 5
-console.log(getArrayLength(names)); // Output: 3
+//==============================================
