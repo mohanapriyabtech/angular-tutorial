@@ -1,0 +1,44 @@
+
+
+  .box {
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .box {
+      padding: 5px;
+    }
+  }
+
+  .heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .menu-bar {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+  }
+
+  .menu {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .customer {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+  }
+  
