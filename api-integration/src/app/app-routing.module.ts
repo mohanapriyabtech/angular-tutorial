@@ -15,7 +15,7 @@ const routes: Routes = [{ path: "", component: HomeComponent },
     path: "", component: ServiceComponent
   },
   { path: "create", component: CreateComponent },
-  { path: "Edit/:id", component: CreateComponent }
+ { path: "Edit/:id", component: CreateComponent } 
   ]
 }
 ];

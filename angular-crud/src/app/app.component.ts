@@ -12,6 +12,7 @@ import { AppService } from './app.service';
 export class AppComponent {
   title = 'angular-crud';
   todo: Object | null = null; // or todo: any = null;
+  
   constructor(private appService: AppService) {
     this.appService.getTodoData(3)
     .subscribe(data => { this.todo = data })
